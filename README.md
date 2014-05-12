@@ -1,4 +1,4 @@
-qgis
+qgis 
 ====
 Le dossier styles contient différents styles pour Qgis 2.2 minumum
 - dossier styles/osm ==> styles pour line et polygone
