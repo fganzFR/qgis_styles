@@ -1,8 +1,8 @@
--- View: avig_plu."_plu_AlignementArbres(vue)"
+-- View: plu."_plu_AlignementArbres(vue)"
 
--- DROP VIEW avig_plu."_plu_AlignementArbres(vue)";
+-- DROP VIEW plu."_plu_AlignementArbres(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_AlignementArbres(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_AlignementArbres(vue)" AS 
  SELECT prescription_lin.oid, prescription_lin.id, prescription_lin.libelle, 
     prescription_lin.txt, prescription_lin.typepsc, prescription_lin.nomfic, 
     prescription_lin.urlfic, prescription_lin.libeattr1, 
@@ -13,11 +13,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_AlignementArbres(vue)" AS
    FROM prescription_lin
   WHERE prescription_lin.typepsc::text = '07'::text;
   
--- View: avig_plu."_plu_Alignement_Marge_Recul(vue)"
+-- View: plu."_plu_Alignement_Marge_Recul(vue)"
 
--- DROP VIEW avig_plu."_plu_Alignement_Marge_Recul(vue)";
+-- DROP VIEW plu."_plu_Alignement_Marge_Recul(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_Alignement_Marge_Recul(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_Alignement_Marge_Recul(vue)" AS 
  SELECT prescription_lin.oid, prescription_lin.id, prescription_lin.libelle, 
     prescription_lin.txt, prescription_lin.typepsc, prescription_lin.nomfic, 
     prescription_lin.urlfic, prescription_lin.libeattr1, 
@@ -28,11 +28,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_Alignement_Marge_Recul(vue)" AS
    FROM prescription_lin
   WHERE prescription_lin.typepsc::text = '11'::text;
   
--- View: avig_plu."_plu_ArbresRemarquables(vue)"
+-- View: plu."_plu_ArbresRemarquables(vue)"
 
--- DROP VIEW avig_plu."_plu_ArbresRemarquables(vue)";
+-- DROP VIEW plu."_plu_ArbresRemarquables(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_ArbresRemarquables(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_ArbresRemarquables(vue)" AS 
  SELECT prescription_pct.oid, prescription_pct.id, prescription_pct.libelle, 
     prescription_pct.txt, prescription_pct.typepsc, prescription_pct.nomfic, 
     prescription_pct.urlfic, prescription_pct.libeattr1, 
@@ -43,11 +43,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_ArbresRemarquables(vue)" AS
    FROM prescription_pct
   WHERE prescription_pct.typepsc::text = '07'::text;
 
--- View: avig_plu."_plu_EBC(vue)"
+-- View: plu."_plu_EBC(vue)"
 
--- DROP VIEW avig_plu."_plu_EBC(vue)";
+-- DROP VIEW plu."_plu_EBC(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_EBC(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_EBC(vue)" AS 
  SELECT prescription_surf.oid, prescription_surf.id, prescription_surf.libelle, 
     prescription_surf.txt, prescription_surf.typepsc, prescription_surf.nomfic, 
     prescription_surf.urlfic, prescription_surf.libeattr1, 
@@ -59,11 +59,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_EBC(vue)" AS
    FROM prescription_surf
   WHERE prescription_surf.typepsc::text = '01'::text;
 
--- View: avig_plu."_plu_ER(vue)"
+-- View: plu."_plu_ER(vue)"
 
--- DROP VIEW avig_plu."_plu_ER(vue)";
+-- DROP VIEW plu."_plu_ER(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_ER(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_ER(vue)" AS 
  SELECT prescription_surf.oid, prescription_surf.id, prescription_surf.libelle, 
     prescription_surf.txt, prescription_surf.typepsc, prescription_surf.nomfic, 
     prescription_surf.urlfic, prescription_surf.libeattr1, 
@@ -75,11 +75,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_ER(vue)" AS
    FROM prescription_surf
   WHERE prescription_surf.typepsc::text = '05'::text;
   
--- View: avig_plu."_plu_Orientations_AlignementVegetal(vue)"
+-- View: plu."_plu_Orientations_AlignementVegetal(vue)"
 
--- DROP VIEW avig_plu."_plu_Orientations_AlignementVegetal(vue)";
+-- DROP VIEW plu."_plu_Orientations_AlignementVegetal(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_Orientations_AlignementVegetal(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_Orientations_AlignementVegetal(vue)" AS 
  SELECT prescription_lin.oid, prescription_lin.id, prescription_lin.libelle, 
     prescription_lin.txt, prescription_lin.typepsc, prescription_lin.nomfic, 
     prescription_lin.urlfic, prescription_lin.libeattr1, 
@@ -90,11 +90,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_Orientations_AlignementVegetal(vue)" AS
    FROM prescription_lin
   WHERE prescription_lin.typepsc::text = '18'::text;
 
--- View: avig_plu."_plu_PSMV(vue)"
+-- View: plu."_plu_PSMV(vue)"
 
--- DROP VIEW avig_plu."_plu_PSMV(vue)";
+-- DROP VIEW plu."_plu_PSMV(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_PSMV(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_PSMV(vue)" AS 
  SELECT info_surf.oid, info_surf.id, info_surf.libelle, info_surf.txt, 
     info_surf.typeinf, info_surf.nomfic, info_surf.urlfic, info_surf.libeattr1, 
     info_surf.valattr1, info_surf.libeattr2, info_surf.valattr2, 
@@ -102,11 +102,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_PSMV(vue)" AS
    FROM info_surf
   WHERE info_surf.typeinf::text = '01'::text;
   
--- View: avig_plu."_plu_ZAC(vue)"
+-- View: plu."_plu_ZAC(vue)"
 
--- DROP VIEW avig_plu."_plu_ZAC(vue)";
+-- DROP VIEW plu."_plu_ZAC(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_ZAC(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_ZAC(vue)" AS 
  SELECT info_surf.oid, info_surf.id, info_surf.libelle, info_surf.txt, 
     info_surf.typeinf, info_surf.nomfic, info_surf.urlfic, info_surf.libeattr1, 
     info_surf.valattr1, info_surf.libeattr2, info_surf.valattr2, 
@@ -114,11 +114,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_ZAC(vue)" AS
    FROM info_surf
   WHERE info_surf.typeinf::text = '02'::text;
 
--- View: avig_plu."_plu_ZoneArcheologique(vue)"
+-- View: plu."_plu_ZoneArcheologique(vue)"
 
--- DROP VIEW avig_plu."_plu_ZoneArcheologique(vue)";
+-- DROP VIEW plu."_plu_ZoneArcheologique(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_ZoneArcheologique(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_ZoneArcheologique(vue)" AS 
  SELECT info_surf.oid, info_surf.id, info_surf.libelle, info_surf.txt, 
     info_surf.typeinf, info_surf.nomfic, info_surf.urlfic, info_surf.libeattr1, 
     info_surf.valattr1, info_surf.libeattr2, info_surf.valattr2, 
@@ -126,11 +126,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_ZoneArcheologique(vue)" AS
    FROM info_surf
   WHERE info_surf.typeinf::text = '16'::text;
 
--- View: avig_plu."_plu_cheminement_doux(vue)"
+-- View: plu."_plu_cheminement_doux(vue)"
 
--- DROP VIEW avig_plu."_plu_cheminement_doux(vue)";
+-- DROP VIEW plu."_plu_cheminement_doux(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_cheminement_doux(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_cheminement_doux(vue)" AS 
  SELECT info_lin.oid, info_lin.id, info_lin.libelle, info_lin.txt, 
     info_lin.typeinf, info_lin.nomfic, info_lin.urlfic, info_lin.libeattr1, 
     info_lin.valattr1, info_lin.libeattr2, info_lin.valattr2, 
@@ -138,11 +138,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_cheminement_doux(vue)" AS
    FROM info_lin
   WHERE info_lin.typeinf::text = '99'::text;
 
--- View: avig_plu."_plu_element_bati(vue)"
+-- View: plu."_plu_element_bati(vue)"
 
--- DROP VIEW avig_plu."_plu_element_bati(vue)";
+-- DROP VIEW plu."_plu_element_bati(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_element_bati(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_element_bati(vue)" AS 
  SELECT prescription_surf.oid, prescription_surf.id, prescription_surf.libelle, 
     prescription_surf.txt, prescription_surf.typepsc, prescription_surf.nomfic, 
     prescription_surf.urlfic, prescription_surf.libeattr1, 
@@ -154,11 +154,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_element_bati(vue)" AS
    FROM prescription_surf
   WHERE prescription_surf.typepsc::text = '07'::text AND prescription_surf.libelle::text = 'Elément bâti'::text;
 
--- View: avig_plu."_plu_jardins(vue)"
+-- View: plu."_plu_jardins(vue)"
 
--- DROP VIEW avig_plu."_plu_jardins(vue)";
+-- DROP VIEW plu."_plu_jardins(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_jardins(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_jardins(vue)" AS 
  SELECT prescription_surf.oid, prescription_surf.id, prescription_surf.libelle, 
     prescription_surf.txt, prescription_surf.typepsc, prescription_surf.nomfic, 
     prescription_surf.urlfic, prescription_surf.libeattr1, 
@@ -170,11 +170,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_jardins(vue)" AS
    FROM prescription_surf
   WHERE prescription_surf.typepsc::text = '07'::text AND prescription_surf.libelle::text = 'Jardin'::text;
   
--- View: avig_plu."_plu_lotissement(vue)"
+-- View: plu."_plu_lotissement(vue)"
 
--- DROP VIEW avig_plu."_plu_lotissement(vue)";
+-- DROP VIEW plu."_plu_lotissement(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_lotissement(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_lotissement(vue)" AS 
  SELECT info_surf.oid, info_surf.id, info_surf.libelle, info_surf.txt, 
     info_surf.typeinf, info_surf.nomfic, info_surf.urlfic, info_surf.libeattr1, 
     info_surf.valattr1, info_surf.libeattr2, info_surf.valattr2, 
@@ -182,11 +182,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_lotissement(vue)" AS
    FROM info_surf
   WHERE info_surf.typeinf::text = '26'::text;
 
--- View: avig_plu."_plu_perimetre_orientation(vue)"
+-- View: plu."_plu_perimetre_orientation(vue)"
 
--- DROP VIEW avig_plu."_plu_perimetre_orientation(vue)";
+-- DROP VIEW plu."_plu_perimetre_orientation(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_perimetre_orientation(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_perimetre_orientation(vue)" AS 
  SELECT prescription_surf.oid, prescription_surf.id, prescription_surf.libelle, 
     prescription_surf.txt, prescription_surf.typepsc, prescription_surf.nomfic, 
     prescription_surf.urlfic, prescription_surf.libeattr1, 
@@ -198,11 +198,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_perimetre_orientation(vue)" AS
    FROM prescription_surf
   WHERE prescription_surf.typepsc::text = '18'::text;
 
--- View: avig_plu."_plu_seveso(vue)"
+-- View: plu."_plu_seveso(vue)"
 
--- DROP VIEW avig_plu."_plu_seveso(vue)";
+-- DROP VIEW plu."_plu_seveso(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_seveso(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_seveso(vue)" AS 
  SELECT info_surf.oid, info_surf.id, info_surf.libelle, info_surf.txt, 
     info_surf.typeinf, info_surf.nomfic, info_surf.urlfic, info_surf.libeattr1, 
     info_surf.valattr1, info_surf.libeattr2, info_surf.valattr2, 
@@ -211,11 +211,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_seveso(vue)" AS
   WHERE info_surf.typeinf::text = '99'::text AND info_surf.libelle::text = 'Seveso'::text;
 
 
--- View: avig_plu."_plu_voie_bruyante_type_1(vue)"
+-- View: plu."_plu_voie_bruyante_type_1(vue)"
 
--- DROP VIEW avig_plu."_plu_voie_bruyante_type_1(vue)";
+-- DROP VIEW plu."_plu_voie_bruyante_type_1(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_voie_bruyante_type_1(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_voie_bruyante_type_1(vue)" AS 
  SELECT info_lin.oid, info_lin.id, info_lin.libelle, info_lin.txt, 
     info_lin.typeinf, info_lin.nomfic, info_lin.urlfic, info_lin.libeattr1, 
     info_lin.valattr1, info_lin.libeattr2, info_lin.valattr2, 
@@ -223,11 +223,11 @@ CREATE OR REPLACE VIEW avig_plu."_plu_voie_bruyante_type_1(vue)" AS
    FROM info_lin
   WHERE info_lin.typeinf::text = '14'::text AND info_lin.valattr1::text = 'catégorie 1'::text;
 
--- View: avig_plu."_plu_voie_bruyante_type_2(vue)"
+-- View: plu."_plu_voie_bruyante_type_2(vue)"
 
--- DROP VIEW avig_plu."_plu_voie_bruyante_type_2(vue)";
+-- DROP VIEW plu."_plu_voie_bruyante_type_2(vue)";
 
-CREATE OR REPLACE VIEW avig_plu."_plu_voie_bruyante_type_2(vue)" AS 
+CREATE OR REPLACE VIEW plu."_plu_voie_bruyante_type_2(vue)" AS 
  SELECT info_lin.oid, info_lin.id, info_lin.libelle, info_lin.txt, 
     info_lin.typeinf, info_lin.nomfic, info_lin.urlfic, info_lin.libeattr1, 
     info_lin.valattr1, info_lin.libeattr2, info_lin.valattr2, 
